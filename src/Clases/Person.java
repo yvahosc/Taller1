@@ -27,7 +27,14 @@ public class Person {
         this.dateBirth = dateBirth;
         this.height = height;
     }
-    
+
+    public Person(int personId, String name, String lastName1, String lastName2) {
+        this.personId = personId;
+        this.name = name;
+        this.lastName1 = lastName1;
+        this.lastName2 = lastName2;
+    }
+        
     public int getPersonId() {
         return personId;
     }
