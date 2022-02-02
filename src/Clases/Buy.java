@@ -13,6 +13,12 @@ public class Buy extends BankAccount{
     public int buyId;
     public int totalToPay;
 
+    public Buy(int buyId, int totalToPay, int accountNumber, boolean activated, int personId, String name, String lastName1, String lastName2) {
+        super(accountNumber, activated, personId, name, lastName1, lastName2);
+        this.buyId = buyId;
+        this.totalToPay = totalToPay;
+    }
+
     public int getBuyId() {
         return buyId;
     }
