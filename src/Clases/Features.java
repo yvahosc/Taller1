@@ -14,6 +14,13 @@ public class Features extends Fruit{
     public int price;
     public String type;
 
+    public Features(String origin, int price, String type, String name, float averageWeight) {
+        super(name, averageWeight);
+        this.origin = origin;
+        this.price = price;
+        this.type = type;
+    }
+    
     public String getOrigin() {
         return origin;
     }
