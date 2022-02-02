@@ -12,12 +12,31 @@ import java.util.Date;
  * @author Yeisson Vahos Cortes
  */
 public class Person {
+    private int personId;
     public String name;
     public String lastName1;
     public String lastName2;
     public Date dateBirth;
     public float height;
 
+    public Person(int personId, String name, String lastName1, String lastName2, Date dateBirth, float height) {
+        this.personId = personId;
+        this.name = name;
+        this.lastName1 = lastName1;
+        this.lastName2 = lastName2;
+        this.dateBirth = dateBirth;
+        this.height = height;
+    }
+    
+    public int getPersonId() {
+        return personId;
+    }
+
+    public void setPersonId(int personId) {
+        this.personId = personId;
+    }
+
+    
     public String getName() {
         return name;
     }
