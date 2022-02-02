@@ -14,6 +14,12 @@ public class ContactInformation extends Person{
     private String address;
     private String email;    
 
+    public ContactInformation(String address, String email, int personId, String name, String lastName1, String lastName2) {
+        super(personId, name, lastName1, lastName2);
+        this.address = address;
+        this.email = email;
+    }
+    
     public String getAddress() {
         return address;
     }
