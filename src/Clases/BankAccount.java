@@ -9,9 +9,15 @@ package Clases;
  *
  * @author Yeisson Vahos Cortes
  */
-public class BankAccount {
+public class BankAccount extends Person{
     private int accountNumber;
     protected boolean activated;
+
+    public BankAccount(int accountNumber, boolean activated, int personId, String name, String lastName1, String lastName2) {
+        super(personId, name, lastName1, lastName2);
+        this.accountNumber = accountNumber;
+        this.activated = activated;
+    }
 
     public int getAccountNumber() {
         return accountNumber;
