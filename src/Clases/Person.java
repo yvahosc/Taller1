@@ -5,7 +5,7 @@
  */
 package Clases;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 /**
  *
@@ -16,10 +16,10 @@ public class Person {
     public String name;
     public String lastName1;
     public String lastName2;
-    public Date dateBirth;
+    public LocalDate dateBirth;
     public float height;
 
-    public Person(int personId, String name, String lastName1, String lastName2, Date dateBirth, float height) {
+    public Person(int personId, String name, String lastName1, String lastName2, LocalDate dateBirth, float height) {
         this.personId = personId;
         this.name = name;
         this.lastName1 = lastName1;
@@ -68,11 +68,11 @@ public class Person {
         this.lastName2 = lastName2;
     }
 
-    public Date getDateBirth() {
+    public LocalDate getDateBirth() {
         return dateBirth;
     }
 
-    public void setDateBirth(Date dateBirth) {
+    public void setDateBirth(LocalDate dateBirth) {
         this.dateBirth = dateBirth;
     }
 
