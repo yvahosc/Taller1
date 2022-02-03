@@ -2,10 +2,10 @@
 ## Este repositorio se creó para el desarrollo del taller práctico correspondiente al manejo de clases y objetos en java.
 
 ### En estos archivos se tienen:
-  #### * Un paquete que contiene las seis clases requeridas, cada una con sus atributos, sus métodos get y set y sus constructores; 
+ * Un paquete que contiene las seis clases requeridas, cada una con sus atributos, sus métodos get y set y sus constructores; 
     > las clases que representan clases padre o base para otras clases, contienen dos constructores: uno con todos sus atributos y uno con los atributos que utilizan las clases que heredan de ellas.
 
-  #### * Un paquete que contiene la clase principal, la cual crea algunas instancias de las clases creadas, simula el proceso de compra y venta de una fruta y evalua que cada objeto creado pertenezca a la clase correspondiente para verificar que se hayan creado las clases que se solicitan en el taller.
+  * Un paquete que contiene la clase principal, la cual crea algunas instancias de las clases creadas, simula el proceso de compra y venta de una fruta y evalua que cada objeto creado pertenezca a la clase correspondiente para verificar que se hayan creado las clases que se solicitan en el taller.
 
 ### Este código muestra por consola la información correspondiente a la creación de algunas instancias correspondientes a las clases existentes:
   #### - Clase persona: la cual guarda información acerca de una persona en particular, como su identificación, nombre, apellidos, fecha de nacimiento y peso.
