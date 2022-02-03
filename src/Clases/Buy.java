@@ -9,16 +9,21 @@ package Clases;
  *
  * @author Yeisson Vahos Cortes
  */
-public class Buy extends BankAccount{
+public class Buy {
     public int buyId;
-    public int totalToPay;
+    public int numberOfFruit;
+    public Features feature;
+    public BankAccount originAccountNumber;
+    public BankAccount destinationAccountNumber;
 
-    public Buy(int buyId, int totalToPay, int accountNumber, boolean activated, int personId, String name, String lastName1, String lastName2) {
-        super(accountNumber, activated, personId, name, lastName1, lastName2);
+    public Buy(int buyId, int numberOfFruit, Features feature, BankAccount originAccountNumber, BankAccount destinationAccountNumber) {
         this.buyId = buyId;
-        this.totalToPay = totalToPay;
+        this.numberOfFruit = numberOfFruit;
+        this.feature = feature;
+        this.originAccountNumber = originAccountNumber;
+        this.destinationAccountNumber = destinationAccountNumber;
     }
-
+       
     public int getBuyId() {
         return buyId;
     }
@@ -27,14 +32,36 @@ public class Buy extends BankAccount{
         this.buyId = buyId;
     }
 
-    public int getTotalToPay() {
-        return totalToPay;
+    public int getNumberOfFruit() {
+        return numberOfFruit;
     }
 
-    public void setTotalToPay(int totalToPay) {
-        this.totalToPay = totalToPay;
+    public void setNumberOfFruit(int numberOfFruit) {
+        this.numberOfFruit = numberOfFruit;
     }
-    
-    
-    
+
+    public Features getFeature() {
+        return feature;
+    }
+
+    public void setFeature(Features feature) {
+        this.feature = feature;
+    }
+
+    public BankAccount getOriginAccountNumber() {
+        return originAccountNumber;
+    }
+
+    public void setOriginAccountNumber(BankAccount originAccountNumber) {
+        this.originAccountNumber = originAccountNumber;
+    }
+
+    public BankAccount getDestinationAccountNumber() {
+        return destinationAccountNumber;
+    }
+
+    public void setDestinationAccountNumber(BankAccount destinationAccountNumber) {
+        this.destinationAccountNumber = destinationAccountNumber;
+    }
+       
 }
