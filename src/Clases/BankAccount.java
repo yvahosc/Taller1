@@ -12,11 +12,13 @@ package Clases;
 public class BankAccount extends Person{
     private int accountNumber;
     protected boolean activated;
+    private int balance;
 
-    public BankAccount(int accountNumber, boolean activated, int personId, String name, String lastName1, String lastName2) {
+    public BankAccount(int accountNumber, boolean activated, int balance, int personId, String name, String lastName1, String lastName2) {
         super(personId, name, lastName1, lastName2);
         this.accountNumber = accountNumber;
         this.activated = activated;
+        this.balance = balance;
     }
 
     public int getAccountNumber() {
@@ -34,6 +36,13 @@ public class BankAccount extends Person{
     public void setActivated(boolean activated) {
         this.activated = activated;
     }
-    
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
     
 }
