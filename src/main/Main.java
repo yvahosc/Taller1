@@ -139,41 +139,80 @@ public class Main {
         Buy buy1 = new Buy(001, 3, features1 , bankAccount1, bankAccount2);
         
         /**
-         * Representa la impresión en consola de la información de la instancia de la clase compra creada.
+         * Representa la impresión en consola de la información de la instancia de la clase compra creada, junto a la información del comprador, el vendedor, el valor a pagar, sus cuentas y balances despues de la compra.
          */
         System.out.println("Buy 1" + "\n" + "Buy Id: " + buy1.getBuyId() + "\n" + "Fruit: " + buy1.feature.name + "\n" + "Number [Kg]: " + buy1.numberOfFruit + "\n" + "Price per Kg: " + buy1.feature.price + "\n" + "Price: " + (buy1.numberOfFruit * buy1.feature.getPrice()) + "\n");
         System.out.println("Buyer" + "\n" + "personId: " + buy1.originAccount.getPersonId() + "\n" + "name: " + buy1.originAccount.name + "\n" + "lastName 1: " + buy1.originAccount.lastName1 + "\n" + "LastName 2: " + buy1.originAccount.lastName2 + "\n" + "Origin Account Number: " + buy1.originAccount.getAccountNumber() + "\n" + "Balance after buy: " + (buy1.originAccount.getBalance() - ((buy1.numberOfFruit * buy1.feature.getPrice()))) + "\n");
         System.out.println("Seller" + "\n" + "personId: " + buy1.destinationAccount.getPersonId() + "\n" + "name: " + buy1.destinationAccount.name + "\n" + "lastName 1: " + buy1.destinationAccount.lastName1 + "\n" + "lastName 2: " + buy1.destinationAccount.lastName2 + "\n" + "Origin Account Number: " + buy1.destinationAccount.getAccountNumber() + "\n" + "Balance after buy: " + (buy1.destinationAccount.getBalance() + ((buy1.numberOfFruit * buy1.feature.getPrice()))) + "\n");
-        
+                
         /**
-         * Representa la evaluación del cumplimiento en la creación de las clases pedidas en el desarrollo del taller utilizando ciclos anidados.
+         * Representa la evaluación de la clase correspondiente a los objetos person1 y person2 creados.
          */
         if ((person1.getClass() == Person.class) & (person2.getClass() == Person.class)){
+            /**
+            * Representa la impresión en consola de la información correspondiente a la clase de los objetos person1 y person2 creados.
+            */
             System.out.println("Person 1 and person 2 are of type: " + Person.class + "\n");
             
+            /**
+            * Representa la evaluación de la clase correspondiente a los objetos bankAccount1 y bankAccount2 creados.
+            */
             if ((bankAccount1.getClass() == BankAccount.class) & (bankAccount2.getClass() == BankAccount.class)){
+                
+                /**
+                * Representa la impresión en consola de la información correspondiente a la clase de los objetos bankAccount1 y bankAccount2 creados.
+                */
                 System.out.println("Account 1 and Account 2 are of type: " + BankAccount.class + "\n");
             
+                /**
+                * Representa la evaluación de la clase correspondiente a los objetos contactInformation1 y contactInformation2 creados.
+                */
                 if ((contactInformation1.getClass() == ContactInformation.class) & (contactInformation2.getClass() == ContactInformation.class)){
-                System.out.println("Contact information 1 and Contact information 2 are of type: " + ContactInformation.class + "\n");
+                    
+                    /**
+                    * Representa la impresión en consola de la información correspondiente a la clase de los objetos contactInformation1 y contactInformation2 creados.
+                    */
+                    System.out.println("Contact information 1 and Contact information 2 are of type: " + ContactInformation.class + "\n");
                 
+                    /**
+                    * Representa la evaluación de la clase correspondiente a los objetos fruit1 y fruit2 creados.
+                    */
                     if ((fruit1.getClass() == Fruit.class) & (fruit2.getClass() == Fruit.class)){
+                        
+                        /**
+                        * Representa la impresión en consola de la información correspondiente a la clase de los objetos fruit1 y fruit2 creados.
+                        */
                         System.out.println("Fruit 1 and fruit 2 are of type: " + Fruit.class + "\n");
                     
+                        /**
+                        * Representa la evaluación de la clase correspondiente a los objetos features1 y features2 creados.
+                        */
                         if ((features1.getClass() == Features.class) & (features2.getClass() == Features.class)){
+                            
+                            /**
+                            * Representa la impresión en consola de la información correspondiente a la clase de los objetos features1 y features2 creados.
+                            */
                             System.out.println("Features 1 and Features 2 are of type: " + Features.class + "\n");
                         
+                            /**
+                            * Representa la evaluación de la clase correspondiente al objeto buy1 creado.
+                            */
                             if ((buy1.getClass() == Buy.class)){
+                                
+                                /**
+                                * Representa la impresión en consola de la información correspondiente a la clase del objeto buy1 creado.
+                                */
                                 System.out.println("Buy 1 is of type: " + Buy.class + "\n");
+                                
+                                /**
+                                * Representa la impresión en consola de la evaluación del cumplimiento en la creación de las clases pedidas en el desarrollo del taller utilizando ciclos anidados.
+                                */
                                 System.out.println("The required classes were created");
                             }
                         }
                     }
                 }  
             }     
-        }
-        else{
-            System.out.println("The required classes were not created");
         }
     }
 }
